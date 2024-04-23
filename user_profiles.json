@@ -1,0 +1,36 @@
+[
+    {
+        "first_name": "shrea",
+        "last_name": "chari",
+        "middle_name": "anjali",
+        "facts": {
+            "favorite_food": "sushi",
+            "favorite_color": "pink",
+            "school": "ucla",
+            "favorite_animal": "tiger",
+            "favorite_musician": "beyonce",
+            "favorite_movie": "harry potter",
+            "birth_city": "san diego"
+        }
+    },
+    {
+        "first_name": "john",
+        "last_name": "doe",
+        "facts": {
+            "favorite_food": "pizza",
+            "favorite_color": "grey",
+            "home_town": "new york city",
+            "favorite_animal": "dog"
+        }
+    },
+    {
+        "first_name": "jane",
+        "last_name": "doe",
+        "facts": {
+            "favorite_food": "noodles",
+            "favorite_color": "green",
+            "favorite_movie": "star wars",
+            "favorite_musician": "michael jackson"
+        }
+    }
+]
