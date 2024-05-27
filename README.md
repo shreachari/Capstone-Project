@@ -8,13 +8,14 @@ This repository consists of Shrea Chari's Capstone Project for the UCLA M.S. Com
 
 1. Clone the repository
 2. Ensure python is installed
-3. Ensure docker is installed and the daemon is running
-4. Open two terminal windows and ensure you are in the repository folder
-5. In one window run the following commands:
+3. Install all dependencies by running ```pip install -r requirements.txt```
+4. Ensure docker is installed and the daemon is running
+5. Open two terminal windows and ensure you are in the repository folder
+6. In one window run the following commands:
     a. ```docker build -t capstone .```
     b. ```docker run -p 5050:5050 -it capstone```
-6. In the other window, run the command ```python client.py```
-7. Follow the prompts
+7. In the other window, run the command ```python client.py```
+8. Follow the prompts
 
 ## Important notes
 
