@@ -4,3 +4,4 @@ mediapipe
 scikit-build
 cmake
 openai
+imutils
