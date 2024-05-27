@@ -4,9 +4,9 @@ import socket, cv2, pickle, struct, imutils, json, sys
 
 # Socket Create
 CLIENT_SOCKET = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-HOST_IP  = '3.129.7.97'  # Use the client's IP
+# HOST_IP  = '52.53.216.8'  # Use the client's IP
 # HOST_IP = '127.0.0.1'
-# HOST_IP = '192.168.86.28'
+HOST_IP = '192.168.1.169'
 PORT = 5050
 SOCKET_ADDRESS = (HOST_IP,PORT)
 
@@ -40,7 +40,6 @@ while keep_going:
                 sys.exit()
             else:
                 got_user_info = True
-                print(got_user_info)
         else:
             vid = cv2.VideoCapture(0)
             

@@ -126,7 +126,7 @@ def finger_counting_test(seq_length):
         previous_elements.append(num_raised)
         
         if all(item == previous_elements[0] for item in previous_elements) and num_raised != last_num and num_raised != -1:
-            print(num_raised)
+            # print(num_raised)
             last_num = num_raised
             if num_raised == 0:
                 continue
@@ -136,7 +136,7 @@ def finger_counting_test(seq_length):
                     index+=1
                 else:
                     num_tries-=1
-                    print("NUM TRIES LEFT: " + str(num_tries))
+                    # print("NUM TRIES LEFT: " + str(num_tries))
                     
         
             if index == len(sequence):                
@@ -349,11 +349,11 @@ def clean_questions(input_text):
     return qa_dict
 
 
-def ask_yes_no_questions(question_dict):
+# def ask_yes_no_questions(question_dict):
     
-    for question in question_dict:
-        print("hi")
-    return False
+#     for question in question_dict:
+#         print("hi")
+#     return False
 
 
 def main():
@@ -389,7 +389,7 @@ def main():
             questions = generate_questions(user_profile, client)
             # Clean questions
             question_dict = clean_questions(questions)
-            print(question_dict)
+            # print(question_dict)
             # create_socket()
             ret = nodding_test(question_dict)
             if ret:
