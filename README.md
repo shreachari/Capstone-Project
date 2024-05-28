@@ -15,10 +15,14 @@ This repository consists of Shrea Chari's Capstone Project for the UCLA M.S. Com
     a. ```docker build -t capstone .```
     b. ```docker run -p 5050:5050 -it capstone```
 7. In the other window, run the command ```python client.py```
-8. Follow the prompts
+8. Follow the prompts:
+    - You will first need to enter your full name
+    - Next you will nod "yes" or "no" to respond to the questions provided
+    - Lastly, you will need to display the numerical sequence printed by holding up fingers on one hand. Reset to 0 fingers in between each digit.
 
 ## Important notes
 
-- You will need to ensure that the 'HOST_IP' variable in the file client.py is set to the IP address where the server will be run. 
+- You will need to ensure that the ```HOST_IP``` variable in the file client.py is set to the IP address where the server will be run.
+- You will need to ensure that ```OPENAI_API_KEY``` is set in line 385 of server.py: ```os.environ['OPENAI_API_KEY'] = 'api-key'```. You can obtain an API key at from [OpenAI](https://openai.com/index/openai-api/)
 
 - The port number can be changed. Ensure that it is changed in the files: client.py, server.py, and Dockerfile. The port number must be changed in the command ```docker run -p 5050:5050 -it capstone``` as well.
