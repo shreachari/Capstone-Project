@@ -381,7 +381,7 @@ def main():
         send_response_to_server(response)
         if response != "Fail":
             # OpenAI setup
-            os.environ['OPENAI_API_KEY'] = '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'
+            os.environ['OPENAI_API_KEY'] = 'api-key'
             client = OpenAI()
             # Setting environment variable
             
